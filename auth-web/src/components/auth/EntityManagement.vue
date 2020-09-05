@@ -62,7 +62,7 @@
         data-test-tag="add-business"
       >
         <template v-slot:text>
-          <p>Add an existing business by entering the Incorporation Number <span class="wb">and associated Passcode.</span></p>
+          <p>Add an existing business by entering the Incorporation Number <span class="wb">and associated Passcode/Password.</span></p>
           <AddBusinessForm
             class="mt-9"
             @close-add-business-modal="closeAddBusinessModal()"

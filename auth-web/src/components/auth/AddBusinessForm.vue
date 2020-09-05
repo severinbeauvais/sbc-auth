@@ -2,7 +2,7 @@
   <div class="passcode-form">
     <v-form ref="addBusinessForm" lazy-validation>
       <fieldset>
-        <legend class="mb-4" hidden>Incorporation Number and Passcodes</legend>
+        <legend class="mb-4" hidden>Incorporation Number and Passcodes/Passwords</legend>
         <v-expand-transition>
           <div class="passcode-form__alert-container" v-show="validationError">
             <v-alert
@@ -26,8 +26,8 @@
           ></v-text-field>
           <v-text-field
             filled
-            label="Enter your Passcode"
-            hint="Passcode must be exactly 9 digits"
+            label="Enter your Passcode/Password"
+            hint="Passcode/password must be exactly 9 digits"
             persistent-hint
             :rules="entityPasscodeRules"
             :maxlength="9"
@@ -54,7 +54,7 @@
         <div class="form__btns mt-6">
           <v-btn large text class="pl-2 pr-2 lost-passcode-btn" data-test="forgot-passcode-button" @click.stop="openHelp()">
             <v-icon>mdi-help-circle-outline</v-icon>
-            <span>I lost or forgot my passcode</span>
+            <span>I lost or forgot my passcode/password</span>
           </v-btn>
           <v-btn
             data-test="add-business-button"

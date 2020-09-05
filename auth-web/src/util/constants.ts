@@ -125,5 +125,6 @@ export enum Permission {
 }
 
 export enum LDFlags {
-    AuthLearnMore = 'auth-options-learn-more'
+    AuthLearnMore = 'auth-options-learn-more',
+    EnableLtdUldImport = 'enable-ltd-ulc-affiliate'
 }
